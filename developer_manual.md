@@ -25,4 +25,4 @@ The file structure of our database is organized such that there is separation of
 ## Software/Libraries:
 In terms of the external libraries and APIs used in this database, we implemented the Bootstrap framework to help with our front-end development. We also implemented chart.js in order to visualize users’ fitness and nutrition for each day.
 ## Database Structure:
-Our database has two tables,  “Nutrition” and “Fitness”, that have are related to each other by the email column. The rows for the “Nutrition” table are “Email”, “Calories”, “Carbs”, “Fats”, and “Protein”. As for the “Fitness” table, those rows will include “Email”, “Calories”, “Days”, and “Time”. The "Email" column in both these tables is the primary key and what joins these two tables together.
+Our database has two tables,  “Nutrition” and “Fitness”, that have are related to each other by the email column. The rows for the “Nutrition” table are “Email”, “Calories”, “Carbs”, “Fats”, and “Protein”. As for the “Fitness” table, those rows will include “Email”, “Calories”, “Days”, and “Time”. The "Email" column in both these tables is what joins these two tables together.
