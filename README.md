@@ -3,7 +3,7 @@
 ## Team Members:
 * Danny Chiang - dchiang720@gmail.com
 * Jason Liu- jliu1239@terpmail.umd.edu
-* Kirena Mani- kirena45@gmail.com
+* Kirena Mani- kmanivan@terpmail.umd.edu
 * Stacy George- stacygeorge97@gmail.com
 
 # Summary:
