@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <title>FIT - Home</title>
+
+<head>
+
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+  <div class ="title">
+    <div class="container">
+      <a href="index.html">Fitness In Training</a>
+    </div>
+  </div>
+
+
+  </div>
+  <nav class = "sub-nav">
+    <nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Index</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+        </ul>
+      </div>
+    </nav>
+  </nav>
+  <div class = "index">
+    <div class = "main-body">
+      <div class = "container">
+        <div class = "empty150">
+        </div>
+        <div class = "content">
+          <h1>Welcome to Fitness in Training</h1>
+          <div class = "sub-content">
+            <h3><small>Need a kickstart for your New Years Resolution? Fitness in Training is a new start up who's purpose is to provide you with the best nutrition and fitness plan based on what you are looking for. All you need to do is enter in; the number of calories to burn, the number of days you are available to work out and the time alloated for each work out, and we will generate a workout plan for you. Do the same with nutrition with: Calroie Intake and your macros and we'll generate you a meal plan. Congrats, you are now Fitness in Training or FIT!</small></h3>
+
+            <div class = "pie"><canvas id="pie-chart" width="400" height="250"></canvas></div>
+            <div class = "line"><canvas id="line-chart" width="500" height="250"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+
+  new Chart(document.getElementById("line-chart"), {
+    type: 'line',
+    data: {
+      labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct", "Nov", "Dec"],
+      datasets: [{
+          data: [250, 244, 240, 235, 232, 227, 223, 217, 215, 214, 218, 221, 223],
+          label: "Men",
+          borderColor: "#3e95cd",
+          fill: false
+        }, {
+          data: [139, 137, 134, 130, 129, 132, 128, 124, 122, 118, 120, 125, 121],
+          label: "Woman",
+          borderColor: "#8e5ea2",
+          fill: false
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Average Weight Progress from our Users by Gender'
+      }
+    }
+  });
+
+
+  new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Carbohydrates", "Fat", "Protein"],
+      datasets: [{
+        label: "Recommended Daily Macros Intake",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f",],
+
+        /*CHANGE THIS FOR INTAKE DIFFERENCES*/
+        data: [247,56,135]
+
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Recommended Daily Macros (Carbs, Fats, Protein) Intake'
+      }
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+.sub-nav .navbar-fixed-top{
+	margin-top: 80px;
+}
+
+.fixed-nav .navbar-fixed-top{
+	width: 100vw;
+}
+
+
+.navbar-nav{
+  	text-align: center;
+}
+
+.navbar-nav li{
+ 	float:none;
+  	display:inline-block;
+  	left: 110%;
+  	margin-left: 85px;
+ }
+
+
+.title{
+	position: fixed;
+	height: 100px;
+	width: 100%;
+}
+
+.title a{
+	font-weight: bold;
+	font-size: 40px;
+	color: #c60d29;
+}
+
+.title a:hover{
+	text-decoration: none;
+}
+
+.fixed-nav .navbar-header a:hover{
+	font-weight: bold;
+	font-size: 40px;
+	color: #c60d29;
+}
+
+.sub-nav .navbar-default{
+	background-color: #c60d29;
+	border: none;
+}
+
+.navbar-inverse{
+	background-color: #193551;
+}
+
+.title{
+	background-color: white;
+}
+
+.fitness .main-body{
+	background-image: url("../img/fitness2.jpg");
+	background-color: #ede1e3;
+	background-size: auto 450px;
+}
+
+.food .main-body{
+	background-image: url("../img/food.jpg");
+	background-size: auto 450px;
+}
+
+.main-body{
+	background-image: url("../img/fitness.jpeg");
+	background-color: #ede1e3;
+	background-size: auto 390px;
+}
+
+.main-body .container{ 
+	height: 100vh;
+	background-color: white;
+	background-image: url("img/Home.jpg");
+ }
+
+
+
+ .empty150{
+ 	height: 150px;
+ }
+
+ .main-body .content{
+ 	margin-left: 30px;
+ }
+
+
+
+.nav .navbar-nav{
+ 	color: white;
+ }
+
+.main-body h1{
+	font-weight: bold;
+	color: #c60d29;
+}
+
+.content .sub-content{
+	width: 92.5%;
+	margin-left: 20px;
+
+}
+
+.pie{
+	margin-top: 6%;
+	padding-left: 50%;
+	margin-left: 20%;
+}
+
+.line{
+	margin-top: -19%;
+	width: 65%;
+	height: 70%;
+}

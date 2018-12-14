@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <title>FIT - Nutrition</title>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+  <div class ="title">
+    <div class="container">
+      <a href="index.html">Fitness In Training</a>
+    </div>
+  </div>
+
+
+  </div>
+  <nav class = "sub-nav">
+    <nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Index</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+          <li class="active"><a href="nutrition.html">Nutrition</a></li>
+        </ul>
+      </div>
+    </nav>
+  </nav>
+<div class = "food">
+  <div class = "main-body">
+    <div class = "container">
+      <div class = "empty150">
+      </div>
+        <div class = "content">
+          <h1>Daily Nutritional Goals</h1>
+          <h3><small>Enter the following information: <br>
+            ~Email address<br>
+            ~Desired Calories Intake<br>
+            ~Desired Carbohydrates Intake<br>
+            ~Desired Fat Intake<br>
+            ~Desired Protein Intake<br><br></small></h3>
+          <form method = "post" form action="nutrition.php">
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter Email Address" name="email">
+            </div>
+            <div class="form-group">
+              <label for="cal">Daily Desired Calorie Intake:</label>
+              <input type="cal" class="form-control" id="cal" placeholder="Enter calories" name="cal">
+            </div>
+            <div class="form-group">
+              <label for="carbs">Daily Desired Carbohydrates:</label>
+              <input type="number" class="form-control" id="carbs" placeholder="Enter carbs in grams" name="carbs">
+            </div>
+            <div class="form-group">
+              <label for="fats">Daily Desired Fats:</label>
+              <input type="text" class="form-control" id="fats" placeholder="Enter fats in grams" name="fats">
+            </div>
+            <div class="form-group">
+              <label for="protein">Daily Desired Protein:</label>
+              <input type="text" class="form-control" id="prot" placeholder="Enter protein in grams" name="prot">
+            </div>
+              <button type="submit" class="btn btn-default">Generate</button>
+              <button type="clear" class="btn btn-default">Clear</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
